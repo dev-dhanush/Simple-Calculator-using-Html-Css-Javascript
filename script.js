@@ -17,13 +17,7 @@ function del()
 function calculate()
 {
     try{
-        let cal=eval(cal_values.value);
-        if(cal==Math.floor(cal))
-        {
-            cal_values.value=cal;
-        }else{
-            cal_values.value=cal.toPrecision(4);
-        }
+        cal_values.value=eval(cal_values.value);
     }catch(err){
         alert("Invalid Input");
     }
